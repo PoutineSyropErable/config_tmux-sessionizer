@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Dictionary of paths -> commands
+declare -A path_commands
+
+path_commands["$HOME/.config/zsh"]="nvim .zshrc" # nvim commands are kinda useless
+path_commands["$HOME/.config/nvim"]="nvim $HOME/.config/nvim/init.lua"
+path_commands["$HOME/.config/hypr"]="nvim $HOME/.config/hypr/hyprland.conf"
+path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="pkill -9 qemu"
+
+notify-send "hey"
+
+# Input path
+target_path="$(pwd)"
+
+command=${path_commands[$target_path]}
+
+# Dispatcher
+if [[ -n "$command" ]]; then
+	notify-send "$command"
+	eval "$command"
+else
+	notify-send "No command registered for: $target_path"
+fi
