@@ -1,5 +1,6 @@
 # file: ~/.config/tmux-sessionizer/tmux-sessionizer.conf
 TS_SESSION_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0.sh" "$HOME/.config/tmux-sessionizer/cmd1.sh" "build.sh")
+TS_DASH_T_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0t.sh" "$HOME/.config/tmux-sessionizer/cmd1t.sh" "build.sh")
 
 # TS_LOG="notify"
 
@@ -51,5 +52,5 @@ TS_EXTRA_SEARCH_PATHS=(
 
 TS_MAX_DEPTH=0
 
-: "${TS_SESSION_COMMANDS[@]}" "${TS_SEARCH_PATHS[@]}" "${TS_EXTRA_SEARCH_PATHS[@]}" >/dev/null 2>&1
+: "${TS_SESSION_COMMANDS[@]}" "${TS_DASH_T_COMMANDS[@]}" "${TS_SEARCH_PATHS[@]}" "${TS_EXTRA_SEARCH_PATHS[@]}" >/dev/null 2>&1
 : "$TS_MAX_DEPTH" >/dev/null 2>&1
