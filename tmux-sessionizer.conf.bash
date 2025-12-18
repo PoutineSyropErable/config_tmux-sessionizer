@@ -1,5 +1,5 @@
 # file: ~/.config/tmux-sessionizer/tmux-sessionizer.conf
-TS_SESSION_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0.sh" "$HOME/.config/tmux-sessionizer/cmd1.sh" "build.sh")
+TS_SESSION_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0.sh" "$HOME/.config/tmux-sessionizer/cmd1.sh" "bear -- ./build.sh")
 TS_DASH_T_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0t.sh" "$HOME/.config/tmux-sessionizer/cmd1t.sh" "build.sh")
 
 # TS_LOG="notify"
@@ -30,6 +30,7 @@ TS_SEARCH_PATHS=(
 	"$HOME/Documents/Books"
 	"$HOME/Documents/University (Real)/Semester 10/Comp 303/AutomakeJava"
 	"$HOME/Documents/University (Real)/Semester 10/Comp 303/Project/Comp303Project"
+	"$HOME/Documents/zzz__PersonalProjects/CppModules/"
 	"$HOME/Documents/zzz__PersonalProjects/MapleKernel"
 	"$HOME/Documents/zzz__PersonalProjects/MapleKernel/src/"
 	"$HOME/Documents/zzz__PersonalProjects/MapleKernel/Tutorials/meaty-skeleton/"

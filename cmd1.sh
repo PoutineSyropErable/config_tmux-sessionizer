@@ -12,6 +12,7 @@ path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="pkill -9
 target_path="$(pwd)"
 
 command=${path_commands[$target_path]}
+# notify-send "1s: $command"
 
 # Dispatcher
 if [[ -n "$command" ]]; then

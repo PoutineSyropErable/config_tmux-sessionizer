@@ -12,6 +12,7 @@ path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="./build.
 target_path="$(pwd)"
 
 command=${path_commands[$target_path]}
+# notify-send "0s: $command"
 
 # Dispatcher
 if [[ -n "$command" ]]; then
