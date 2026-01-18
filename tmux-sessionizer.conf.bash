@@ -1,6 +1,6 @@
 # file: ~/.config/tmux-sessionizer/tmux-sessionizer.conf
 TS_SESSION_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0.sh" "$HOME/.config/tmux-sessionizer/cmd1.sh" "bear -- ./build.sh")
-TS_DASH_T_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0t.sh" "$HOME/.config/tmux-sessionizer/cmd1t.sh" "build.sh")
+TS_DASH_T_COMMANDS=("$HOME/.config/tmux-sessionizer/cmd0t.sh" "$HOME/.config/tmux-sessionizer/cmd1t.sh" "./build.sh")
 
 # TS_LOG="notify"
 
@@ -13,6 +13,7 @@ TS_SEARCH_PATHS=(
 	"$HOME/QolScripts/screen_placer"
 	"$HOME/.config/lf"
 	"$HOME/.config/hypr"
+	"$HOME/.config/i3"
 
 	"$HOME/.config/eww"
 	"$HOME/.config/nvim"

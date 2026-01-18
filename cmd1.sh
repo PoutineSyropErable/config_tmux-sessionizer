@@ -7,6 +7,7 @@ path_commands["$HOME/.config/zsh"]="nvim .zshrc" # nvim commands are kinda usele
 path_commands["$HOME/.config/nvim"]="nvim $HOME/.config/nvim/init.lua"
 path_commands["$HOME/.config/hypr"]="nvim $HOME/.config/hypr/hyprland.conf"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="pkill -9 qemu"
+path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src/LongMode"]="pkill -9 qemu"
 
 # Input path
 target_path="$(pwd)"
@@ -18,5 +19,5 @@ command=${path_commands[$target_path]}
 if [[ -n "$command" ]]; then
 	eval "$command"
 else
-	notify-send "No command registered for: $target_path"
+	notify-send "(cmd1.sh): No command registered for: $target_path"
 fi
