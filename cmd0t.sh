@@ -17,6 +17,7 @@ command=${path_commands[$target_path]}
 
 # Dispatcher
 if [[ -n "$command" ]]; then
+	# notify-send "$command"
 	eval "$command"
 else
 	notify-send "(cmd0t.sh) No command registered for: $target_path"
