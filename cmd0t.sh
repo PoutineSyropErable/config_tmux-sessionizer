@@ -8,6 +8,9 @@ path_commands["$HOME/.config/nvim"]="nvim $HOME/.config/nvim/init.lua"
 path_commands["$HOME/.config/hypr"]="nvim $HOME/.config/hypr/hyprland.conf"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="./build.sh release qemu '' move"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src/LongMode"]="./build64.sh release"
+path_commands["$HOME/Documents/zzz__PersonalProjects/ESP32/myProject"]="./build.sh release"
+path_commands["$HOME/Documents/zzz__PersonalProjects/STM32/STMKernel/src"]="./build.sh release real"
+path_commands["$HOME/Documents/Vivado/inf3500-a26-g2-labo1-franckkernel"]="./build.sh"
 
 # Input path
 target_path="$(pwd)"

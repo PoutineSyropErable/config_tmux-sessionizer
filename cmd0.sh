@@ -7,6 +7,8 @@ path_commands["$HOME/.config/zsh"]="nvim .zshrc" # nvim commands are kinda usele
 path_commands["$HOME/.config/nvim"]="nvim $HOME/.config/nvim/init.lua"
 path_commands["$HOME/.config/hypr"]="nvim $HOME/.config/hypr/hyprland.conf"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="./build.sh release qemu '' nomove"
+path_commands["$HOME/Documents/zzz__PersonalProjects/ESP32/myProject"]="./build.sh"
+path_commands["$HOME/Documents/Vivado/inf3500-a26-g2-labo1-franckkernel"]="./build.sh"
 
 # Input path
 target_path="$(pwd)"

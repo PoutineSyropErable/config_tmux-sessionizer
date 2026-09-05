@@ -8,6 +8,8 @@ path_commands["$HOME/.config/nvim"]="nvim $HOME/.config/nvim/init.lua"
 path_commands["$HOME/.config/hypr"]="nvim $HOME/.config/hypr/hyprland.conf"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src"]="pkill -9 qemu"
 path_commands["$HOME/Documents/zzz__PersonalProjects/MapleKernel/src/LongMode"]="pkill -9 qemu"
+path_commands["$HOME/Documents/zzz__PersonalProjects/ESP32/myProject"]="pkill pio" #problem, this should run in current shell, not the other
+path_commands["$HOME/Documents/zzz__PersonalProjects/STM32/STMKernel/src"]="pkill -f Renode"
 
 # Input path
 target_path="$(pwd)"
